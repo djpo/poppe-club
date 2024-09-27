@@ -1,20 +1,37 @@
 @import '@fontsource/fira-mono';
 
+/* dm-sans-latin-wght-normal */
+@font-face {
+  font-family: 'DM Sans Variable';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 1000;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/dm-sans:vf@latest/latin-wght-normal.woff2) format('woff2-variations');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
 :root {
-	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+	--font-body-default: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-body-1: 'DM Sans Variable';
 	--font-mono: 'Fira Mono', monospace;
-	--color-bg-0: rgb(202, 216, 228);
-	--color-bg-1: hsl(209, 36%, 86%);
-	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #ff3e00;
-	--color-theme-2: #4075a6;
-	--color-text: rgba(0, 0, 0, 0.7);
+	--color-bg-0: rgb(214, 142, 241);
+	--color-bg-1: rgb(255, 153, 153);
+	--color-bg-2: rgb(100, 216, 228);
+	--color-bg-translucent: rgba(255, 153, 153, 0.5);
+	--color-theme-1: white;
+	--color-theme-2: fuchsia;
+	--color-text: rgba(255, 255, 255, 1);
+	--gray-box-background: rgba(175, 175, 175, 0.35);
+	--gray-box-border: rgba(255, 255, 255, 0.6);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
-	font-family: var(--font-body);
+
+	font-family: var(--font-body-1), var(--font-body-default);
 	color: var(--color-text);
 }
+
+
 
 body {
 	min-height: 100vh;
@@ -55,7 +72,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1rem;
+	font-size: 1.1rem;
 }
 
 pre {
@@ -90,7 +107,10 @@ button:focus:not(:focus-visible) {
 
 @media (min-width: 720px) {
 	h1 {
-		font-size: 2.4rem;
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 1.5rem
 	}
 }
 

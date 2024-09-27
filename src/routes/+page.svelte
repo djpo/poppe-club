@@ -1,59 +1,59 @@
 <script>
+	import cancan from '$lib/images/cancan.webp';
 	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcome_fallback from '$lib/images/svelte-welcome.png';
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>poppe.club</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section>
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
+<img class="background-video" src={cancan} alt="welcome!!!!!!" />
 
-		to your new<br />SvelteKit app
+<section>
+	<h1 class="gray-box">
+		welcome to poppe.club
 	</h1>
 
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
+	<h2 class="gray-box">
+		fresh site incoming
 	</h2>
 
-	<Counter />
+	<div class="counter-container gray-box">
+		<p class="counter-label">while you wait,<br />here,<br />count some electric sheep:</p>
+		<Counter />
+	</div>
 </section>
 
 <style>
+	.background-video {
+		position: fixed;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		z-index: -1;
+		opacity: 0.4;
+	}
+
 	section {
+		flex: 1;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		flex: 0.6;
 	}
 
-	h1 {
-		width: 100%;
+	.gray-box {
+		border: 2px solid var(--gray-box-border);
+		background-color: var(--gray-box-background);
+		padding: 1rem 1.2rem;
 	}
 
-	.welcome {
-		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+	.counter-container {
+		margin-top: 6rem;
 	}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	.counter-label {
+		margin: 0 0 1rem 0;
 	}
 </style>
