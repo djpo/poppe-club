@@ -12,7 +12,8 @@
 
 <section>
 	<div>
-		<button>O</button>
+		<!-- <a class="btn btn-1" href="/">⏺</a> -->
+    <a class="btn btn-1" href="/project">⬤</a>
 	</div>
 
 	<div>
@@ -41,12 +42,18 @@
 	</div>
 
 	<div class="projects">
-		<ul>
-			<li class="project-thumbnail">project 1: Flüsterpost</li>
-			<li class="project-thumbnail">project 2: Neofonie</li>
-			<li class="project-thumbnail">project 3: Taxfix</li>
-			<li class="project-thumbnail">project 4: this site</li>
-		</ul>
+		<a class="btn" href="/project">
+			<div class="project-thumbnail">project 1: Flüsterpost</div>
+		</a>
+		<a class="btn" href="/project">
+			<div class="project-thumbnail">project 2: Neofonie</div>
+		</a>
+		<a class="btn" href="/project">
+			<div class="project-thumbnail">project 3: Taxfix</div>
+		</a>
+		<a class="btn" href="/project">
+			<div class="project-thumbnail">project 4: this site</div>
+		</a>
 	</div>
 
 	<div class="footer-chunk">
@@ -80,13 +87,6 @@
 </section>
 
 <style>
-	section {
-		flex: 1;
-		padding: 0.8rem;
-		display: flex;
-		flex-direction: column;
-	}
-
 	.project-thumbnail {
 		min-height: 100px;
 		min-width: 100px;

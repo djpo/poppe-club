@@ -97,13 +97,23 @@ pre {
 }
 
 input,
-button {
+button,
+.btn {
 	font-size: inherit;
 	font-family: inherit;
 }
 
 button:focus:not(:focus-visible) {
 	outline: none;
+}
+
+.btn {
+	color: inherit;
+	text-decoration: none !important;
+}
+
+.btn-1 {
+	padding: 0.2rem 0.5rem;
 }
 
 @media (min-width: 720px) {
