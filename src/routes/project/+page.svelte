@@ -5,7 +5,7 @@
 
 <section>
   <div>
-		<a class="btn btn-1" href="/">✕</a>
+		<a class="btn btn-1" href="/">╳</a>
 	</div>
 
 	<h1>Project Name</h1>

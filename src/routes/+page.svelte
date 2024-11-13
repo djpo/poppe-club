@@ -91,7 +91,8 @@
 		min-height: 100px;
 		min-width: 100px;
 		background-color: rgba(100,100,100,0.3);
-		margin: 1rem;
+		margin-bottom: 1rem;
+		padding: 1rem;
 	}
 
 	p {
