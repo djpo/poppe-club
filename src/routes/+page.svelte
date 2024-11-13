@@ -29,7 +29,7 @@
 		<p>
 			Based in Berlin-Neukölln
 			<br>
-			poppeisadancer@gmail.col
+			poppeisadancer@gmail.com
 			<br>
 			0176 731 26346
 		</p>
@@ -90,7 +90,7 @@
 	.project-thumbnail {
 		min-height: 100px;
 		min-width: 100px;
-		background-color: blue;
+		background-color: rgba(100,100,100,0.3);
 		margin: 1rem;
 	}
 
