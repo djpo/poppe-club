@@ -13,11 +13,14 @@
 <section>
 	<div>
 		<!-- <a class="btn btn-1" href="/">⏺</a> -->
-    <a class="btn btn-1" href="/project">⬤</a>
+		<a class="btn btn-1" href="/project">⬤</a>
 	</div>
 
 	<div>
-		<h1>Hi! I'm Poppe, a senior frontend developer. I'm good with people, and I love to create with the audience in mind.</h1>
+		<h1>
+			Hi! I'm Poppe, a senior frontend developer. I'm good with people, and I love to create with
+			the audience in mind.
+		</h1>
 	</div>
 
 	<div class="main-chunk">
@@ -29,9 +32,9 @@
 		<h2>Contact</h2>
 		<p>
 			Based in Berlin-Neukölln
-			<br>
+			<br />
 			poppeisadancer@gmail.com
-			<br>
+			<br />
 			0176 731 26346
 		</p>
 	</div>
@@ -60,9 +63,9 @@
 		<h2>Poppe</h2>
 		<p>
 			Senior frontend developer
-			<br>
+			<br />
 			Download my CV
-			<br>
+			<br />
 			Check out my music on Soundcloud
 		</p>
 	</div>
@@ -71,7 +74,7 @@
 		<h2>Contact</h2>
 		<p>
 			poppeisadancer@gmail.com
-			<br>
+			<br />
 			0176 7126346
 		</p>
 	</div>
@@ -80,7 +83,7 @@
 		<h2>Legal</h2>
 		<p>
 			Imprint
-			<br>
+			<br />
 			Privacy policy
 		</p>
 	</div>
@@ -90,7 +93,7 @@
 	.project-thumbnail {
 		min-height: 100px;
 		min-width: 100px;
-		background-color: rgba(100,100,100,0.3);
+		background-color: rgba(100, 100, 100, 0.3);
 		margin-bottom: 1rem;
 		padding: 1rem;
 	}
