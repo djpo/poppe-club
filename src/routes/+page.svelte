@@ -25,7 +25,7 @@
 
 	<div class="main-chunk">
 		<h2>Experience</h2>
-		<p>7 years of experience in frontend/fullstack development</p>
+		<p>7 years of experience in frontend and fullstack development</p>
 	</div>
 
 	<div class="main-chunk">
