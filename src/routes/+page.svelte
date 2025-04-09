@@ -12,7 +12,6 @@
 
 <section>
 	<div>
-		<!-- <a class="btn btn-1" href="/">⏺</a> -->
 		<a class="btn btn-1" href="/project">⬤</a>
 	</div>
 
