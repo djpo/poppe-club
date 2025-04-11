@@ -39,4 +39,9 @@
 		max-width: 1440px;
 		padding: 1em;
 	}
+	@media (min-width: 720px) {
+		main {
+			padding: 2em;
+		}
+	}
 </style>
