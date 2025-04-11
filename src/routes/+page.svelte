@@ -186,6 +186,10 @@
 </section>
 
 <style>
+	.header-with-button {
+		display: flex;
+		flex-direction: column;
+	}
 	@media (min-width: 720px) {
 		.header-with-button {
 			display: flex;
