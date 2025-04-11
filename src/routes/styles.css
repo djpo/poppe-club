@@ -21,11 +21,19 @@
 	--color-sherbert-0: rgb(214, 142, 241);
 	--color-sherbert-1: rgb(255, 153, 153);
 	--color-sherbert-2: rgb(100, 216, 228);
-	--color-bg-white: rgb(255, 255, 255);
-	--color-theme-1: white;
-	--color-theme-2: fuchsia;
+	--color-bg-0: white;
+	--color-bg-1: darkgray;
+	--color-bg-2: lightpink;
+	--color-bg-3: teal;
+	--color-bg-4: lightgreen;
+	--color-bg-5: orange;
+	--color-bg-6: fuchsia;
+	--color-bubble-0: rgb(150, 222, 207);
+	--color-bubble-1: white;
+	--color-bubble-2: blue;
+	--color-bubble-3: green;
+	--color-bubble-4: pink;
 	--color-text: rgb(0, 0, 0);
-	--color-bubble: rgb(150, 222, 207);
 	--gray-box-background: rgba(175, 175, 175, 0.35);
 	--gray-box-border: rgba(255, 255, 255, 0.6);
 	--column-width: 42em;
@@ -44,7 +52,7 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	background-attachment: fixed;
-	background-color: var(--color-bg-white);
+	background-color: var(--color-bg-0);
 	background-size: 100vw 100vh;
 	/* background-image: radial-gradient(
 			50% 50% at 50% 50%,
@@ -72,7 +80,6 @@ p {
 	line-height: 1.3;
 }
 a {
-	color: var(--color-theme-1);
 	text-decoration: none;
 }
 a:hover {

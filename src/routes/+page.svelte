@@ -1,18 +1,93 @@
 <script>
 	// import cancan from '$lib/images/cancan.webp';
 	// import Counter from './Counter.svelte';
+
+	const themeColors = ['white', 'black', 'pink', 'teal', 'seafoam', 'orange', 'fuchsia'];
+	let themeIndex = 0;
+	function handleClick() {
+		if (themeIndex + 1 < themeColors.length) {
+			themeIndex++;
+		} else {
+			themeIndex = 0;
+		}
+	}
 </script>
 
 <svelte:head>
 	<title>poppe.club</title>
 	<meta name="description" content="Svelte demo app" />
+
+	{#if themeIndex === 0}
+		<style>
+			body {
+				background-color: var(--color-bg-0);
+			}
+			.bubble {
+				background-color: var(--color-bubble-0);
+			}
+		</style>
+	{:else if themeIndex === 1}
+		<style>
+			body {
+				background-color: var(--color-bg-1);
+			}
+			.bubble {
+				background-color: var(--color-bubble-1);
+			}
+		</style>
+	{:else if themeIndex === 2}
+		<style>
+			body {
+				background-color: var(--color-bg-2);
+			}
+			.bubble {
+				background-color: var(--color-bubble-2);
+			}
+		</style>
+	{:else if themeIndex === 3}
+		<style>
+			body {
+				background-color: var(--color-bg-3);
+			}
+			.bubble {
+				background-color: var(--color-bubble-1);
+			}
+		</style>
+	{:else if themeIndex === 4}
+		<style>
+			body {
+				background-color: var(--color-bg-4);
+			}
+			.bubble {
+				background-color: var(--color-bubble-3);
+			}
+		</style>
+	{:else if themeIndex === 5}
+		<style>
+			body {
+				background-color: var(--color-bg-5);
+			}
+			.bubble {
+				background-color: var(--color-bubble-1);
+			}
+		</style>
+	{:else if themeIndex === 6}
+		<style>
+			body {
+				background-color: var(--color-bg-6);
+			}
+			.bubble {
+				background-color: var(--color-bubble-4);
+			}
+		</style>
+	{/if}
 </svelte:head>
 
 <!-- <img class="background-video" src={cancan} alt="welcome!!!!!!" /> -->
 
 <section>
 	<div class="header-with-button">
-		<div class="btn header-button">
+		<div class="btn header-button" on:click={handleClick}>
 			<p>⬤</p>
 		</div>
 		<h1>
@@ -33,15 +108,15 @@
 		<div class="text-chunk main-chunk">
 			<h2>Skills</h2>
 			<ul class="skills">
-				<p>JavaScript</p>
-				<p>Typescript</p>
-				<p>React</p>
-				<p>React Native</p>
-				<p>Angular</p>
-				<p>Vue</p>
-				<p>Svelte</p>
-				<p>HTML</p>
-				<p>CSS</p>
+				<p class="bubble">JavaScript</p>
+				<p class="bubble">Typescript</p>
+				<p class="bubble">React</p>
+				<p class="bubble">React Native</p>
+				<p class="bubble">Angular</p>
+				<p class="bubble">Vue</p>
+				<p class="bubble">Svelte</p>
+				<p class="bubble">HTML</p>
+				<p class="bubble">CSS</p>
 			</ul>
 		</div>
 	</div>
@@ -156,8 +231,7 @@
 		gap: 0.3em;
 		list-style: none;
 	}
-	.skills > p {
-		background-color: var(--color-bubble);
+	.bubble {
 		border-radius: 1em;
 		padding: 0.2em 0.6em;
 	}
