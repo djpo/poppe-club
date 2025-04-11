@@ -17,30 +17,40 @@
 
 	<div>
 		<h1>
-			Hi! I'm Poppe, a senior frontend developer. I'm good with people, and I love to create with
-			the audience in mind.
+			Hi! I'm Poppe, a frontend developer. I'm good with people, and I love to create with the
+			audience in mind.
 		</h1>
 	</div>
 
-	<div class="main-chunk">
-		<h2>Experience</h2>
-		<p>7 years of experience in frontend and fullstack development</p>
-	</div>
+	<div class="text-chunks-container">
+		<div class="main-chunk">
+			<h2>Experience</h2>
+			<p>7 years of experience in frontend and fullstack development</p>
+		</div>
 
-	<div class="main-chunk">
-		<h2>Contact</h2>
-		<p>
-			Based in Berlin-Neukölln
-			<br />
-			poppeisadancer@gmail.com
-			<br />
-			0176 731 26346
-		</p>
-	</div>
+		<div class="main-chunk">
+			<h2>Contact</h2>
+			<p>
+				Based in Berlin-Neukölln
+				<br />
+				poppeisadancer@gmail.com
+				<br />
+				0176 731 26346
+			</p>
+		</div>
 
-	<div class="main-chunk">
-		<h2>Skills</h2>
-		<p>JavaScript; TypeScript; React; React Native; Angular; Svelte</p>
+		<div class="main-chunk">
+			<h2>Skills</h2>
+			<ul class="skills">
+				<p>JavaScript</p>
+				<p>Typescript</p>
+				<p>React</p>
+				<p>React Native</p>
+				<p>Angular</p>
+				<p>Vue</p>
+				<p>Svelte</p>
+			</ul>
+		</div>
 	</div>
 
 	<div class="projects">
@@ -58,46 +68,67 @@
 		</a>
 	</div>
 
-	<div class="footer-chunk">
-		<h2>Poppe</h2>
-		<p>
-			Senior frontend developer
-			<br />
-			Download my CV
-			<br />
-			Check out my music on Soundcloud
-		</p>
-	</div>
+	<div class="text-chunks-container">
+		<div class="footer-chunk">
+			<h2>Poppe</h2>
+			<p>
+				Senior frontend developer
+				<br />
+				Download my CV
+				<br />
+				Check out my music on Soundcloud
+			</p>
+		</div>
 
-	<div class="footer-chunk">
-		<h2>Contact</h2>
-		<p>
-			poppeisadancer@gmail.com
-			<br />
-			0176 7126346
-		</p>
-	</div>
+		<div class="footer-chunk">
+			<h2>Contact</h2>
+			<p>
+				poppeisadancer@gmail.com
+				<br />
+				0176 7126346
+			</p>
+		</div>
 
-	<div class="footer-chunk">
-		<h2>Legal</h2>
-		<p>
-			Imprint
-			<br />
-			Privacy policy
-		</p>
+		<div class="footer-chunk">
+			<h2>Legal</h2>
+			<p>
+				Imprint
+				<br />
+				Privacy policy
+			</p>
+		</div>
 	</div>
 </section>
 
 <style>
+	.text-chunks-container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+		gap: 0.5em;
+	}
+	.skills {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		padding: 0;
+		gap: 0.3em;
+	}
+	.skills > p {
+		background-color: var(--color-bubble);
+		border-radius: 1em;
+		padding: 0.2em 0.6em;
+	}
+	.projects {
+		margin-top: 1em;
+		margin-bottom: 1em;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
+		gap: 1em;
+	}
 	.project-thumbnail {
-		min-height: 100px;
+		min-height: 150px;
 		min-width: 100px;
 		background-color: rgba(100, 100, 100, 0.3);
-		margin-bottom: 1rem;
-		padding: 1rem;
-	}
-
-	p {
-		text-align: left;
+		padding: 1em;
 	}
 </style>

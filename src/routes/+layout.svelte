@@ -29,15 +29,15 @@
 		min-height: 100vh;
 		min-width: 100vw;
 	}
-
 	main {
+		margin: 0 auto;
+		box-sizing: border-box;
 		flex: 1;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		margin: 0 auto;
-		box-sizing: border-box;
-		padding: 1rem;
+		max-width: 1440px;
+		padding: 1em;
 	}
 
 	/* footer {
@@ -47,11 +47,9 @@
 		align-items: center;
 		padding: 12px;
 	}
-
 	footer a {
 		font-weight: bold;
 	}
-
 	@media (min-width: 480px) {
 		footer {
 			padding: 12px 0;
