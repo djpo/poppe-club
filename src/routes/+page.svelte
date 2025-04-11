@@ -112,8 +112,8 @@
 		<div class="text-chunk main-chunk">
 			<h2>Experience</h2>
 			<p>
-				7 years of experience in frontend development. Diverse environments including agencies,
-				startups, growing businesses.
+				6 years of experience in frontend development. Diverse environments including agencies,
+				startups, and mid-size businesses.
 			</p>
 		</div>
 
@@ -152,11 +152,16 @@
 		<div class="text-chunk footer-chunk-wider">
 			<h2>Poppe</h2>
 			<p>
-				Senior frontend developer
+				Frontend developer
 				<br />
-				Download my CV
+				Download my
+				<a
+					href="https://drive.google.com/file/d/1LjoMApP79TjppJpmG1pg8q77wIMyDcJi/view"
+					target="_blank">CV</a
+				>
 				<br />
-				Check out my music on Soundcloud
+				Check out my music on
+				<a href="https://soundcloud.com/poppe-poppe" target="_blank">Soundcloud</a>
 			</p>
 		</div>
 
