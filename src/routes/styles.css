@@ -21,19 +21,20 @@
 	--color-sherbert-0: rgb(214, 142, 241);
 	--color-sherbert-1: rgb(255, 153, 153);
 	--color-sherbert-2: rgb(100, 216, 228);
-	--color-bg-0: white;
-	--color-bg-1: darkgray;
-	--color-bg-2: lightpink;
-	--color-bg-3: teal;
-	--color-bg-4: lightgreen;
-	--color-bg-5: orange;
-	--color-bg-6: fuchsia;
+	--color-bg-0: rgb(255, 255, 255);
+	--color-bg-1: rgb(43, 43, 43);
+	--color-bg-2: rgb(253, 188, 227);
+	--color-bg-3: rgb(52, 204, 205);
+	--color-bg-4: rgb(182, 239, 221);
+	--color-bg-5: rgb(255, 110, 19);
+	--color-bg-6: rgb(255, 39, 197);
 	--color-bubble-0: rgb(150, 222, 207);
-	--color-bubble-1: white;
-	--color-bubble-2: blue;
-	--color-bubble-3: green;
-	--color-bubble-4: pink;
-	--color-text: rgb(0, 0, 0);
+	--color-bubble-1: rgb(255, 255, 255);
+	--color-bubble-2: rgb(103, 169, 217);
+	--color-bubble-3: rgb(45, 223, 159);
+	--color-bubble-4: rgb(255, 175, 234);
+	--color-text-0: rgb(0, 0, 0);
+	--color-text-1: rgb(255, 255, 255);
 	--gray-box-background: rgba(175, 175, 175, 0.35);
 	--gray-box-border: rgba(255, 255, 255, 0.6);
 	--column-width: 42em;
@@ -45,7 +46,7 @@
 	--breakpoint-xxl: 1440px;
 
 	font-family: var(--font-body-1), var(--font-body-default);
-	color: var(--color-text);
+	color: var(--color-text-0);
 }
 
 body {

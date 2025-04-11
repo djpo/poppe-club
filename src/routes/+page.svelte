@@ -2,10 +2,18 @@
 	// import cancan from '$lib/images/cancan.webp';
 	// import Counter from './Counter.svelte';
 
-	const themeColors = ['white', 'black', 'pink', 'teal', 'seafoam', 'orange', 'fuchsia'];
+	const themes = [
+		{ name: 'white', bg: '--color-bg-0', bubble: '--color-bubble-0' },
+		{ name: 'black', bg: '--color-bg-1', bubble: '--color-bubble-1' },
+		{ name: 'pink', bg: 'var(--color-bg-2)', bubble: 'var(--color-bubble-2)' },
+		{ name: 'teal', bg: '--color-bg-0', bubble: '--color-bubble-0' },
+		{ name: 'seafoam', bg: '--color-bg-0', bubble: '--color-bubble-0' },
+		{ name: 'orange', bg: '--color-bg-0', bubble: '--color-bubble-0' },
+		{ name: 'fuchsia', bg: '--color-bg-0', bubble: '--color-bubble-0' }
+	];
 	let themeIndex = 0;
 	function handleClick() {
-		if (themeIndex + 1 < themeColors.length) {
+		if (themeIndex + 1 < themes.length) {
 			themeIndex++;
 		} else {
 			themeIndex = 0;
@@ -28,11 +36,15 @@
 		</style>
 	{:else if themeIndex === 1}
 		<style>
+			:root {
+				color: var(--color-text-1);
+			}
 			body {
 				background-color: var(--color-bg-1);
 			}
 			.bubble {
 				background-color: var(--color-bubble-1);
+				color: var(--color-text-0);
 			}
 		</style>
 	{:else if themeIndex === 2}
@@ -87,9 +99,9 @@
 
 <section>
 	<div class="header-with-button">
-		<div class="btn header-button" on:click={handleClick}>
+		<btn class="btn header-button" on:click={handleClick}>
 			<p>⬤</p>
-		</div>
+		</btn>
 		<h1>
 			Hi! I'm Poppe, a frontend developer. I'm good with people, and I love to create with the
 			audience in mind.
