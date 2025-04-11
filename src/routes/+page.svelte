@@ -99,7 +99,7 @@
 
 <section>
 	<div class="header-with-button">
-		<btn class="btn header-button" on:click={handleClick}>
+		<btn class="btn header-button prevent-select" on:click={handleClick} on:keypress={handleClick}>
 			<p>⬤</p>
 		</btn>
 		<h1>
