@@ -1,24 +1,29 @@
 <script>
+	import { run } from 'svelte/legacy';
+
 	import { browser } from '$app/environment';
 	import { page } from '$app/stores';
 	import { webVitals } from '$lib/vitals';
 	import './styles.css';
 
-	/** @type {import('./$types').LayoutServerData} */
-	export let data;
+	
+	/** @type {{data: import('./$types').LayoutServerData, children?: import('svelte').Snippet}} */
+	let { data, children } = $props();
 
-	$: if (browser && data?.analyticsId) {
-		webVitals({
-			path: $page.url.pathname,
-			params: $page.params,
-			analyticsId: data.analyticsId
-		});
-	}
+	run(() => {
+		if (browser && data?.analyticsId) {
+			webVitals({
+				path: $page.url.pathname,
+				params: $page.params,
+				analyticsId: data.analyticsId
+			});
+		}
+	});
 </script>
 
 <div class="app">
 	<main>
-		<slot />
+		{@render children?.()}
 	</main>
 </div>
 

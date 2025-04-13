@@ -11,7 +11,7 @@
 		{ name: 'orange', bg: '--color-bg-0', bubble: '--color-bubble-0' },
 		{ name: 'fuchsia', bg: '--color-bg-0', bubble: '--color-bubble-0' }
 	];
-	let themeIndex = 0;
+	let themeIndex = $state(0);
 	function handleClick() {
 		if (themeIndex + 1 < themes.length) {
 			themeIndex++;
@@ -99,7 +99,7 @@
 
 <section>
 	<div class="header-with-button">
-		<btn class="btn header-button prevent-select" on:click={handleClick} on:keypress={handleClick}>
+		<btn class="btn header-button prevent-select" onclick={handleClick} onkeypress={handleClick}>
 			<p>⬤</p>
 		</btn>
 		<h1>
