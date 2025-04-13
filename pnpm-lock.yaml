@@ -15,52 +15,52 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0
       '@playwright/test':
-        specifier: ^1.40.1
+        specifier: ^1.51.1
         version: 1.51.1
       '@sveltejs/adapter-vercel':
-        specifier: ^4.0.0
+        specifier: ^4.0.5
         version: 4.0.5(@sveltejs/kit@2.20.5(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.26.2)(vite@5.4.18))(svelte@5.26.2)(vite@5.4.18))
       '@sveltejs/kit':
-        specifier: ^2.5.27
+        specifier: ^2.20.5
         version: 2.20.5(@sveltejs/vite-plugin-svelte@4.0.4(svelte@5.26.2)(vite@5.4.18))(svelte@5.26.2)(vite@5.4.18)
       '@sveltejs/vite-plugin-svelte':
-        specifier: ^4.0.0
+        specifier: ^4.0.4
         version: 4.0.4(svelte@5.26.2)(vite@5.4.18)
       '@types/cookie':
         specifier: ^0.5.4
         version: 0.5.4
       eslint:
-        specifier: ^8.55.0
+        specifier: ^8.57.1
         version: 8.57.1
       eslint-config-prettier:
         specifier: ^8.10.0
         version: 8.10.0(eslint@8.57.1)
       eslint-plugin-svelte:
-        specifier: ^2.45.1
+        specifier: ^2.46.1
         version: 2.46.1(eslint@8.57.1)(svelte@5.26.2)
       prettier:
-        specifier: ^3.1.0
+        specifier: ^3.5.3
         version: 3.5.3
       prettier-plugin-svelte:
-        specifier: ^3.2.6
+        specifier: ^3.3.3
         version: 3.3.3(prettier@3.5.3)(svelte@5.26.2)
       svelte:
-        specifier: ^5.0.0
+        specifier: ^5.26.2
         version: 5.26.2
       svelte-check:
-        specifier: ^4.0.0
+        specifier: ^4.1.6
         version: 4.1.6(svelte@5.26.2)(typescript@5.8.3)
       typescript:
-        specifier: ^5.5.0
+        specifier: ^5.8.3
         version: 5.8.3
       vite:
-        specifier: ^5.4.4
+        specifier: ^5.4.18
         version: 5.4.18
       vitest:
-        specifier: ^1.0.0
+        specifier: ^1.6.1
         version: 1.6.1
       web-vitals:
-        specifier: ^3.5.0
+        specifier: ^3.5.2
         version: 3.5.2
 
 packages:
