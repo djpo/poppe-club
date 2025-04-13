@@ -1,12 +1,20 @@
-# SvelteKit Demo app
+# Svelte library
 
-The official demo app for SvelteKit, hosted on Vercel.
+Everything you need to build a Svelte library, powered by [`sv`](https://npmjs.com/package/sv).
 
-## Deploy Your Own
+Read more about creating a library [in the docs](https://svelte.dev/docs/kit/packaging).
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fvercel%2Ftree%2Fmain%2Fexamples%2Fsveltekit-1&project-name=sveltekit-vercel&repository-name=sveltekit-vercel&demo-title=SvelteKit%20%2B%20Vercel&demo-url=https%3A%2F%2Fsveltekit-template.vercel.app%2F)
+## Creating a project
 
-_Live Example: https://sveltekit-1-template.vercel.app_
+If you're seeing this, you've probably already done this step. Congrats!
+
+```bash
+# create a new project in the current directory
+npx sv create
+
+# create a new project in my-app
+npx sv create my-app
+```
 
 ## Developing
 
@@ -19,9 +27,17 @@ npm run dev
 npm run dev -- --open
 ```
 
+Everything inside `src/lib` is part of your library, everything inside `src/routes` can be used as a showcase or preview app.
+
 ## Building
 
-To create a production version of your app:
+To build your library:
+
+```bash
+npm run package
+```
+
+To create a production version of your showcase app:
 
 ```bash
 npm run build
@@ -29,8 +45,14 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
-## Speed Insights
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
 
-Once deployed on Vercel, you can benefit from [Speed Insights](https://vercel.com/docs/concepts/speed-insights) simply by navigating to Vercel's dashboard, clicking on the 'Speed Insights' tab, and enabling the product.
+## Publishing
 
-You will get data once your application will be re-deployed and will receive visitors.
+Go into the `package.json` and give your package the desired name through the `"name"` option. Also consider adding a `"license"` field and point it to a `LICENSE` file which you can create from a template (one popular option is the [MIT license](https://opensource.org/license/mit/)).
+
+To publish your library to [npm](https://www.npmjs.com):
+
+```bash
+npm publish
+```
