@@ -6,14 +6,12 @@
 </script>
 
 <section>
-  <div class="header-with-button">
-    <ThemeButton />
+  <ThemeButton />
 
-    <h1>
-      Hi! I'm Poppe, a frontend developer. I'm good with people, and I love to
-      create with the audience in mind.
-    </h1>
-  </div>
+  <h1>
+    Hi! I'm Poppe, a frontend developer. I'm good with people, and I love to
+    create with the audience in mind.
+  </h1>
 
   <div class="main-chunks-container">
     {#each homeContent as chunk (chunk)}
@@ -78,17 +76,6 @@
 </section>
 
 <style>
-  .header-with-button {
-    display: flex;
-    flex-direction: column;
-  }
-  @media (min-width: 720px) {
-    .header-with-button {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-  }
-
   @media (min-width: 720px) {
     .main-chunks-container {
       display: grid;

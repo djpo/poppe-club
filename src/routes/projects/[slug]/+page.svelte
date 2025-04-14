@@ -1,8 +1,11 @@
 <script>
+  import ThemeButton from "$lib/ThemeButton.svelte";
   import BubbleList from "$lib/BubbleList.svelte";
 
   let { data } = $props();
 </script>
+
+<ThemeButton />
 
 <h1>{data.project.name}</h1>
 
