@@ -1,6 +1,6 @@
 export type BubbleList = string[];
 
-type ContentChunk = {
+export type ContentChunk = {
   label: string;
   type: "text" | "bubbleList";
   content: string | BubbleList;

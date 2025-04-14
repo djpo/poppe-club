@@ -2,6 +2,7 @@
   import ThemeButton from "$lib/ThemeButton.svelte";
   import BubbleList from "$lib/BubbleList.svelte";
   import { homeContent } from "./content.ts";
+  import { projects } from "./projects-content.ts";
 </script>
 
 <section>
@@ -28,18 +29,13 @@
   </div>
 
   <div class="projects">
-    <a class="btn" href="/project">
-      <div class="project-thumbnail">project 1: Flüsterpost</div>
-    </a>
-    <a class="btn" href="/project">
-      <div class="project-thumbnail">project 2: Neofonie</div>
-    </a>
-    <a class="btn" href="/project">
-      <div class="project-thumbnail">project 3: Taxfix</div>
-    </a>
-    <a class="btn" href="/project">
-      <div class="project-thumbnail">project 4: this site</div>
-    </a>
+    {#each projects as project (project)}
+      <a class="btn" href="/projects/{project.slug}">
+        <div class="project-thumbnail">
+          {project.name}
+        </div>
+      </a>
+    {/each}
   </div>
 
   <div class="footer-chunks-container">
