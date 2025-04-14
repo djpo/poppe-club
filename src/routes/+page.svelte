@@ -3,11 +3,6 @@
   import Counter from "./Counter.svelte";
 </script>
 
-<svelte:head>
-  <title>poppe.club</title>
-  <meta name="description" content="Svelte demo app" />
-</svelte:head>
-
 <img class="background-video" src={cancan} alt="welcome!!!!!!" />
 
 <section>
