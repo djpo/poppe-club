@@ -1,6 +1,6 @@
 <script>
   import ThemeButton from "$lib/ThemeButton.svelte";
-  import Bubble from "$lib/Bubble.svelte";
+  import BubbleList from "$lib/BubbleList.svelte";
   import { homeContent } from "./content.ts";
 </script>
 
@@ -19,11 +19,7 @@
       <div class="text-chunk main-chunk">
         <h2>{chunk.label}</h2>
         {#if chunk.type === "bubbleList"}
-          <ul class="bubble-list">
-            {#each chunk.content as item (item)}
-              <li><Bubble text={item} /></li>
-            {/each}
-          </ul>
+          <BubbleList textList={chunk.content} />
         {:else}
           <p>{chunk.content}</p>
         {/if}
@@ -137,15 +133,6 @@
     .footer-chunk-wider {
       grid-column: 1 / span 2;
     }
-  }
-
-  .bubble-list {
-    min-width: 50%;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.3em;
-    list-style: none;
   }
   .projects {
     margin-top: 2em;
