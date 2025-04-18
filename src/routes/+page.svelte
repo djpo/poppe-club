@@ -1,6 +1,7 @@
 <script>
   import Nav from "$lib/Nav.svelte";
   import BubbleList from "$lib/BubbleList.svelte";
+  import ProjectPreview from "$lib/ProjectPreview.svelte";
   import { homeContent } from "./content.ts";
   import { projects } from "./projects-content.ts";
 </script>
@@ -27,6 +28,8 @@
   </div>
 
   <div class="projects">
+    <ProjectPreview />
+
     {#each projects as project (project)}
       <a class="btn" href="/projects/{project.slug}">
         <div class="project-thumbnail">
@@ -128,7 +131,7 @@
     min-height: 150px;
     min-width: 100px;
     max-width: 100%;
-    background-color: rgba(100, 100, 100, 0.3);
+    background: var(--color-gray-translucent);
     padding: 1em;
   }
 </style>
