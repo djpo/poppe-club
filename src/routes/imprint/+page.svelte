@@ -2,6 +2,8 @@
   import ThemeButton from "$lib/ThemeButton.svelte";
 </script>
 
-<ThemeButton />
+<section>
+  <ThemeButton />
 
-<h1>Imprint</h1>
+  <h1>Imprint</h1>
+</section>
