@@ -1,3 +1,7 @@
+<script lang="ts">
+  let { name = "cool_project_name" } = $props();
+</script>
+
 <div class="border">
   <div class="topbar">
     {#each Array(3)}
@@ -15,7 +19,7 @@
       </div>
     {/each}
   </div>
-  <div class="content">nothing to see here</div>
+  <div class="content">{name}</div>
 </div>
 
 <style>
@@ -38,7 +42,6 @@
     height: 0.5em;
   }
   .content {
-    min-width: 10em;
     min-height: 10em;
     background: var(--color-gray-translucent);
     padding: 1em;

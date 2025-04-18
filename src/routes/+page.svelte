@@ -28,13 +28,9 @@
   </div>
 
   <div class="projects">
-    <ProjectPreview />
-
     {#each projects as project (project)}
       <a class="btn" href="/projects/{project.slug}">
-        <div class="project-thumbnail">
-          {project.name}
-        </div>
+        <ProjectPreview name={project.name} />
       </a>
     {/each}
   </div>
@@ -126,12 +122,5 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
     gap: 1em;
-  }
-  .project-thumbnail {
-    min-height: 150px;
-    min-width: 100px;
-    max-width: 100%;
-    background: var(--color-gray-translucent);
-    padding: 1em;
   }
 </style>
