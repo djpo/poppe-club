@@ -13,6 +13,7 @@
 <div class="header-buttons-row">
   <button
     class="header-button"
+    aria-label="Change theme"
     onclick={handleClickDot}
     style:color="var({themes[themeState.themeId].text})"
   >
@@ -29,6 +30,7 @@
   </button>
   <button
     class="header-button"
+    aria-label="Navigate back"
     onclick={handleClickX}
     style:color="var({themes[themeState.themeId].text})"
   >
