@@ -1,9 +1,9 @@
 <script>
-  import ThemeButton from "$lib/ThemeButton.svelte";
+  import Nav from "$lib/Nav.svelte";
 </script>
 
 <section>
-  <ThemeButton />
+  <Nav />
 
   <h1>Privacy policy</h1>
 </section>

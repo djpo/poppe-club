@@ -1,12 +1,12 @@
 <script>
-  import ThemeButton from "$lib/ThemeButton.svelte";
+  import Nav from "$lib/Nav.svelte";
   import BubbleList from "$lib/BubbleList.svelte";
 
   let { data } = $props();
 </script>
 
 <section>
-  <ThemeButton />
+  <Nav />
 
   <h1>{data.project.name}</h1>
 

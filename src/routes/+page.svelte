@@ -1,12 +1,12 @@
 <script>
-  import ThemeButton from "$lib/ThemeButton.svelte";
+  import Nav from "$lib/Nav.svelte";
   import BubbleList from "$lib/BubbleList.svelte";
   import { homeContent } from "./content.ts";
   import { projects } from "./projects-content.ts";
 </script>
 
 <section>
-  <ThemeButton />
+  <Nav />
 
   <h1>
     Hi! I'm Poppe, a frontend developer. I'm good with people, and I love to
