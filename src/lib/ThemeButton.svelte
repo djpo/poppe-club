@@ -1,6 +1,6 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import { cycleTheme } from "$lib/theme.svelte.ts";
+  import { themes, themeState, cycleTheme } from "$lib/theme.svelte.ts";
 
   function handleClickDot() {
     cycleTheme();
@@ -11,7 +11,11 @@
 </script>
 
 <div class="header-buttons-row">
-  <button class="header-button" onclick={handleClickDot}>
+  <button
+    class="header-button"
+    onclick={handleClickDot}
+    style:color="var({themes[themeState.themeId].text})"
+  >
     <svg class="icon" viewBox="0 0 100 100">
       <circle
         stroke-width="8"
@@ -23,7 +27,11 @@
       />
     </svg>
   </button>
-  <button class="header-button" onclick={handleClickX}>
+  <button
+    class="header-button"
+    onclick={handleClickX}
+    style:color="var({themes[themeState.themeId].text})"
+  >
     <svg class="icon" viewBox="0 0 100 100">
       <path
         stroke-width="8"
