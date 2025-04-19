@@ -1,5 +1,17 @@
 <script lang="ts">
-  let { name = "cool_project_name" } = $props();
+  let { name, image: imageUrl = "" } = $props();
+
+  // type for import.meta.glob
+  // https://github.com/vitejs/vite/issues/9599#issuecomment-1209333753
+  const imageModules = import.meta.glob<Record<string, string>>(
+    "$lib/images/*.png",
+    {
+      eager: true,
+      query: {
+        enhanced: true,
+      },
+    }
+  );
 </script>
 
 <div class="border">
@@ -19,7 +31,18 @@
       </div>
     {/each}
   </div>
-  <div class="content">{name}</div>
+
+  {#if !imageUrl}
+    <div class="content no-image">{name}</div>
+  {:else}
+    <div class="content">
+      <enhanced:img
+        src={imageModules[`/src/lib/images/${imageUrl}`].default}
+        alt="some alt text"
+        class="project-image"
+      />
+    </div>
+  {/if}
 </div>
 
 <style>
@@ -44,6 +67,13 @@
   .content {
     min-height: 10em;
     background: var(--color-gray-translucent);
+  }
+  .content.no-image {
     padding: 1em;
+  }
+  .project-image {
+    width: 100%;
+    max-height: 20em;
+    object-fit: scale-down;
   }
 </style>

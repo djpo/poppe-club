@@ -30,7 +30,7 @@
   <div class="projects">
     {#each projects as project (project)}
       <a class="btn" href="/projects/{project.slug}">
-        <ProjectPreview name={project.name} />
+        <ProjectPreview name={project.name} image={project.image} />
       </a>
     {/each}
   </div>

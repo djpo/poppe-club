@@ -1,6 +1,7 @@
 <script>
   import Nav from "$lib/Nav.svelte";
   import BubbleList from "$lib/BubbleList.svelte";
+  import ProjectPreview from "$lib/ProjectPreview.svelte";
 
   let { data } = $props();
 </script>
@@ -20,4 +21,6 @@
       {/if}
     </div>
   {/each}
+
+  <ProjectPreview name={data.project.name} image={data.project.image} />
 </section>

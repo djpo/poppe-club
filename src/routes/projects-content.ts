@@ -17,7 +17,7 @@ export const projects: Project[] = [
   {
     slug: "fluesterpost",
     name: "Flüsterpost",
-    image: "$lib/images/fluesterpost_the_pits.png",
+    image: "fluesterpost_1.png",
     contentChunks: [
       {
         label: "Challenge",
@@ -49,7 +49,7 @@ export const projects: Project[] = [
   {
     slug: "taxfix",
     name: "Taxfix",
-    image: "$lib/images/fluesterpost_the_pits.png",
+    image: "taxfix_1.png",
     contentChunks: [
       {
         label: "Challenge",
@@ -72,7 +72,7 @@ export const projects: Project[] = [
   {
     slug: "txtwerk",
     name: "TXTWerk (Neofonie)",
-    image: "$lib/images/fluesterpost_the_pits.png",
+    image: "",
     contentChunks: [
       {
         label: "Challenge",
@@ -94,7 +94,7 @@ export const projects: Project[] = [
   {
     slug: "neofonie",
     name: "Neofonie (mycare.de, OBI)",
-    image: "$lib/images/fluesterpost_the_pits.png",
+    image: "",
     contentChunks: [
       {
         label: "Challenge",
@@ -123,7 +123,7 @@ export const projects: Project[] = [
   {
     slug: "farklife",
     name: "Farklife",
-    image: "$lib/images/fluesterpost_the_pits.png",
+    image: "farklife_1_standard.png",
     contentChunks: [
       {
         label: "Challenge",
@@ -146,7 +146,7 @@ export const projects: Project[] = [
   {
     slug: "portfolio",
     name: "Personal portfolio",
-    image: "$lib/images/fluesterpost_the_pits.png",
+    image: "",
     contentChunks: [
       {
         label: "Challenge",
