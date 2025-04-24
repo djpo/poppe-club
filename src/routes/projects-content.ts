@@ -1,23 +1,33 @@
 import type { ContentChunk } from "./content.ts";
 
+type ProjectImage = {
+  url: string;
+  label: string;
+};
+
 export type Project = {
   slug: string;
   name: string;
-  image: string;
+  images: ProjectImage[];
   contentChunks: ContentChunk[];
 };
 
 export type ProjectPreview = {
   slug: string;
   name: string;
-  image: string;
+  image: ProjectImage;
 };
 
 export const projects: Project[] = [
   {
     slug: "fluesterpost",
     name: "Flüsterpost",
-    image: "fluesterpost_1.png",
+    images: [
+      { url: "fluesterpost_1.png", label: "label1" },
+      { url: "fluesterpost_2.png", label: "label2" },
+      { url: "fluesterpost_3.png", label: "label3" },
+      { url: "fluesterpost_4.png", label: "label4" },
+    ],
     contentChunks: [
       {
         label: "Challenge",
@@ -49,7 +59,10 @@ export const projects: Project[] = [
   {
     slug: "taxfix",
     name: "Taxfix",
-    image: "taxfix_1.png",
+    images: [
+      { url: "taxfix_1.png", label: "symbolic tax logic" },
+      { url: "taxfix_2_mobile.png", label: "Taxfix mobile app" },
+    ],
     contentChunks: [
       {
         label: "Challenge",
@@ -72,7 +85,7 @@ export const projects: Project[] = [
   {
     slug: "txtwerk",
     name: "TXTWerk (Neofonie)",
-    image: "",
+    images: [],
     contentChunks: [
       {
         label: "Challenge",
@@ -94,7 +107,7 @@ export const projects: Project[] = [
   {
     slug: "neofonie",
     name: "Neofonie (mycare.de, OBI)",
-    image: "",
+    images: [],
     contentChunks: [
       {
         label: "Challenge",
@@ -123,7 +136,7 @@ export const projects: Project[] = [
   {
     slug: "farklife",
     name: "Farklife",
-    image: "farklife_1_standard.png",
+    images: [{ url: "farklife_1_standard.png", label: "Farklife game" }],
     contentChunks: [
       {
         label: "Challenge",
@@ -146,7 +159,7 @@ export const projects: Project[] = [
   {
     slug: "portfolio",
     name: "Personal portfolio",
-    image: "",
+    images: [],
     contentChunks: [
       {
         label: "Challenge",

@@ -22,5 +22,8 @@
     </div>
   {/each}
 
-  <ProjectPreview altText={data.project.name} imageUrl={data.project.image} />
+  {#each data.project.images as image (image)}
+    <h2>{image.label}</h2>
+    <ProjectPreview altText={image.label} imageUrl={image.url} />
+  {/each}
 </section>
