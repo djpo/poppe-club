@@ -1,5 +1,5 @@
 <script lang="ts">
-  let { name, image: imageUrl = "" } = $props();
+  let { altText, imageUrl = "" } = $props();
 
   // type for import.meta.glob
   // https://github.com/vitejs/vite/issues/9599#issuecomment-1209333753
@@ -33,12 +33,12 @@
   </div>
 
   {#if !imageUrl}
-    <div class="content no-image">{name}</div>
+    <div class="content no-image">{altText}</div>
   {:else}
     <div class="content">
       <enhanced:img
         src={imageModules[`/src/lib/images/${imageUrl}`].default}
-        alt="some alt text"
+        alt={altText}
         class="project-image"
       />
     </div>
