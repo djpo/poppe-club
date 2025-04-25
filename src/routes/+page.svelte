@@ -44,6 +44,11 @@
       <p>
         Frontend developer
         <br />
+        Visit me on
+        <a href="https://www.linkedin.com/in/poppepoppe" target="_blank"
+          >LinkedIn</a
+        >
+        <br />
         Download my
         <a
           href="https://drive.google.com/file/d/1LjoMApP79TjppJpmG1pg8q77wIMyDcJi/view"
