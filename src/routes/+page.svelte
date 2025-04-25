@@ -51,7 +51,7 @@
         <br />
         Download my
         <a
-          href="https://drive.google.com/file/d/1LjoMApP79TjppJpmG1pg8q77wIMyDcJi/view"
+          href="https://drive.google.com/file/d/1tAV-kmS_XbPHGOBskXjUu8u0kB6Sxbfd/view"
           target="_blank">CV</a
         >
         <br />
