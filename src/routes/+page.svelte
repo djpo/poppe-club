@@ -1,7 +1,7 @@
 <script>
   import Nav from "$lib/Nav.svelte";
   import BubbleList from "$lib/BubbleList.svelte";
-  import ProjectPreview from "$lib/ProjectPreview.svelte";
+  import ProjectImage from "$lib/ProjectImage.svelte";
   import { homeContent } from "./content.ts";
   import { projects } from "./projects-content.ts";
 </script>
@@ -29,7 +29,7 @@
 
   <div class="projects">
     {#each projects as project (project)}
-      <ProjectPreview
+      <ProjectImage
         altText={project.name}
         imageUrl={project.images[0]?.url}
         navUrl={`/projects/${project.slug}`}

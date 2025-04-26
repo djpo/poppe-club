@@ -1,7 +1,7 @@
 <script>
   import Nav from "$lib/Nav.svelte";
   import BubbleList from "$lib/BubbleList.svelte";
-  import ProjectPreview from "$lib/ProjectPreview.svelte";
+  import ProjectImage from "$lib/ProjectImage.svelte";
 
   let { data } = $props();
 </script>
@@ -24,6 +24,6 @@
 
   {#each data.project.images as image (image)}
     <h2>{image.label}</h2>
-    <ProjectPreview altText={image.label} imageUrl={image.url} />
+    <ProjectImage altText={image.label} imageUrl={image.url} />
   {/each}
 </section>

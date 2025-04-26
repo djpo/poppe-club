@@ -12,12 +12,6 @@ export type Project = {
   contentChunks: ContentChunk[];
 };
 
-export type ProjectPreview = {
-  slug: string;
-  name: string;
-  image: ProjectImage;
-};
-
 export const projects: Project[] = [
   {
     slug: "fluesterpost",

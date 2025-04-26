@@ -1,5 +1,5 @@
 <script lang="ts">
-  let { altText, imageUrl = "", navUrl = "" } = $props();
+  let { altText, imageUrl = "" } = $props();
 
   // type for import.meta.glob
   // https://github.com/vitejs/vite/issues/9599#issuecomment-1209333753
@@ -14,47 +14,38 @@
   );
 </script>
 
-<div class="wrapper">
-  <a class="btn" href={navUrl}>
-    <div class="frame">
-      <div class="topbar">
-        {#each Array(3)}
-          <div class="fake-button">
-            <svg class="icon" viewBox="0 0 100 100">
-              <circle
-                stroke-width="8"
-                stroke="currentColor"
-                fill="currentColor"
-                cx="50"
-                cy="50"
-                r="45"
-              />
-            </svg>
-          </div>
-        {/each}
-      </div>
-
-      {#if !imageUrl}
-        <div class="content no-image">{altText}</div>
-      {:else}
-        <div class="content">
-          <enhanced:img
-            src={imageModules[`/src/lib/images/${imageUrl}`].default}
-            alt={altText}
-            class="project-image"
+<div class="frame">
+  <div class="topbar">
+    {#each Array(3)}
+      <div class="fake-button">
+        <svg class="icon" viewBox="0 0 100 100">
+          <circle
+            stroke-width="8"
+            stroke="currentColor"
+            fill="currentColor"
+            cx="50"
+            cy="50"
+            r="45"
           />
-        </div>
-      {/if}
+        </svg>
+      </div>
+    {/each}
+  </div>
+
+  {#if !imageUrl}
+    <div class="content no-image">{altText}</div>
+  {:else}
+    <div class="content">
+      <enhanced:img
+        src={imageModules[`/src/lib/images/${imageUrl}`].default}
+        alt={altText}
+        class="project-image"
+      />
     </div>
-  </a>
+  {/if}
 </div>
 
 <style>
-  .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .frame {
     border: 2px solid var(--color-black);
     border-radius: 3px;
