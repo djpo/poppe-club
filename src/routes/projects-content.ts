@@ -17,20 +17,13 @@ export const projects: Project[] = [
     slug: "fluesterpost",
     name: "Flüsterpost",
     images: [
-      { url: "fluesterpost_1.png", label: "label1" },
-      { url: "fluesterpost_2.png", label: "label2" },
-      { url: "fluesterpost_3.png", label: "label3" },
-      { url: "fluesterpost_4.png", label: "label4" },
+      { url: "fluesterpost_3.png", label: "with full translation cycle" },
+      { url: "fluesterpost_2.png", label: "mobile view" },
+      { url: "fluesterpost_4.png", label: "wireframe" },
     ],
     contentChunks: [
       {
-        label: "Challenge",
-        type: "text",
-        content:
-          "Product description text if needed outlines what you have done and how you have don it as a technical breakdown, which challenges you have solved, and why you did the project or within which company, and what your role was.",
-      },
-      {
-        label: "Solution",
+        label: "Description",
         type: "text",
         content:
           "got to engage my passion for human languages. look at this design! look at these funny examples!",
@@ -54,18 +47,22 @@ export const projects: Project[] = [
     slug: "taxfix",
     name: "Taxfix",
     images: [
-      { url: "taxfix_1.png", label: "symbolic tax logic" },
+      { url: "taxfix_1.png", label: "symbolic tax logic editor" },
       { url: "taxfix_2_mobile.png", label: "Taxfix mobile app" },
     ],
     contentChunks: [
       {
-        label: "Challenge",
+        label: "Tasks",
         type: "text",
-        content:
-          "Product description text if needed outlines what you have done and how you have don it as a technical breakdown, which challenges you have solved, and why you did the project or within which company, and what your role was.",
+        content: `– Create, improve, and bugfix mature consumer apps using React Native and React
+– Lead rapid implementation of new features and user experiences
+– Contribute to the growth and stability of core mobile and web apps in multiple markets (first versions in Italy and France)
+– Collaborate with other internal departments and multiple stakeholders
+– Take responsibility for maintenance of company-wide technical tools
+`,
       },
       {
-        label: "Solution",
+        label: "(ideas to expand on)",
         type: "text",
         content: "many apps! early days; new markets; TaxML Editor...",
       },
@@ -82,14 +79,10 @@ export const projects: Project[] = [
     images: [],
     contentChunks: [
       {
-        label: "Challenge",
+        label: "Description",
         type: "text",
-        content: "hard times",
-      },
-      {
-        label: "Solution",
-        type: "text",
-        content: "good solutions",
+        content:
+          "build a frontend app from scratch. the demonstration app enabled marketing of an AI text analysis API to potential clients. used: Angular 16. images to come soon!",
       },
       {
         label: "Skills employed",
@@ -104,44 +97,44 @@ export const projects: Project[] = [
     images: [],
     contentChunks: [
       {
-        label: "Challenge",
+        label: "mycare.de",
         type: "text",
-        content: "hard times",
-      },
-      {
-        label: "Solution",
-        type: "text",
-        content: "good solutions",
+        content:
+          "maintain webapp frontend, fix bugs, improve performance. assisted launching marketing campaigns. images to come soon!",
       },
       {
         label: "Skills employed",
         type: "bubbleList",
-        content: [
-          "React",
-          "Sagas",
-          "Google Translate API",
-          "Express.js",
-          "node.js",
-          "CSS",
-        ],
+        content: ["Vue.js", "HTML", "CSS"],
+      },
+      {
+        label: "OBI",
+        type: "text",
+        content:
+          "migrate backend service to use new CRM, consumed by all OBI apps via GraphQL.",
+      },
+      {
+        label: "Skills employed",
+        type: "bubbleList",
+        content: ["TypeScript", "GraphQL"],
       },
     ],
   },
   {
     slug: "farklife",
     name: "Farklife",
-    images: [{ url: "farklife_1_standard.png", label: "Farklife game" }],
+    images: [
+      {
+        url: "farklife_1_standard.png",
+        label: "counting up the dice",
+      },
+    ],
     contentChunks: [
       {
-        label: "Challenge",
-        type: "text",
-        content: "none",
-      },
-      {
-        label: "Solution",
+        label: "Description",
         type: "text",
         content:
-          "uh, don't remember much. but I like the game, so it was fun to build it!",
+          "a simple project to practice my React skills. I like the real-life dice game called Farkle, so it was fun to build it virtually!",
       },
       {
         label: "Skills employed",
@@ -156,19 +149,14 @@ export const projects: Project[] = [
     images: [],
     contentChunks: [
       {
-        label: "Challenge",
+        label: "Description",
         type: "text",
-        content: "it's this site right here!",
-      },
-      {
-        label: "Solution",
-        type: "text",
-        content: "recursion! hehe",
+        content: "it's this site right here! more info to come soon. :)",
       },
       {
         label: "Skills employed",
         type: "bubbleList",
-        content: ["Svelte", "sveltekit"],
+        content: ["Svelte", "SvelteKit", "GitHub Issues"],
       },
     ],
   },
