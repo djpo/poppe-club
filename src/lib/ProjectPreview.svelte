@@ -82,6 +82,8 @@
     padding: 1em;
   }
   .project-image {
+    /* margin-bottom to correct for mysterious space */
+    margin-bottom: -5px;
     width: 100%;
     height: 100%;
     max-height: 20em;
