@@ -16,7 +16,7 @@
 
   <div class="main-chunks-container">
     {#each homeContent as chunk (chunk)}
-      <div class="text-chunk main-chunk">
+      <div class="main-chunk">
         <h2>{chunk.label}</h2>
         {#if chunk.type === "bubbleList"}
           <BubbleList textList={chunk.content} />
@@ -38,7 +38,7 @@
   </div>
 
   <div class="footer-chunks-container">
-    <div class="text-chunk footer-chunk-wider">
+    <div class="footer-chunk-wider">
       <h2>Poppe</h2>
       <p>
         Frontend developer
@@ -56,7 +56,7 @@
       </p>
     </div>
 
-    <div class="text-chunk">
+    <div>
       <h2>Contact</h2>
       <p>
         poppeisadancer@gmail.com
@@ -65,7 +65,7 @@
       </p>
     </div>
 
-    <div class="text-chunk">
+    <div>
       <h2>Legal</h2>
       <p>
         <a href="/imprint">Imprint</a>
@@ -82,21 +82,6 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
       gap: 1em;
-    }
-  }
-  @media (max-width: 479px) {
-    .main-chunk {
-      padding: 0;
-    }
-  }
-  @media (max-width: 719px) {
-    .main-chunk {
-      margin-top: 1em;
-    }
-  }
-  @media (min-width: 1080px) {
-    .main-chunk {
-      padding-right: 10%;
     }
   }
 
