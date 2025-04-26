@@ -1,5 +1,5 @@
 <script lang="ts">
-  let { altText, imageUrl = "" } = $props();
+  let { altText, imageUrl = "", navUrl = "" } = $props();
 
   // type for import.meta.glob
   // https://github.com/vitejs/vite/issues/9599#issuecomment-1209333753
@@ -14,39 +14,48 @@
   );
 </script>
 
-<div class="border">
-  <div class="topbar">
-    {#each Array(3)}
-      <div class="fake-button">
-        <svg class="icon" viewBox="0 0 100 100">
-          <circle
-            stroke-width="8"
-            stroke="currentColor"
-            fill="currentColor"
-            cx="50"
-            cy="50"
-            r="45"
-          />
-        </svg>
+<div class="wrapper">
+  <a class="btn" href={navUrl}>
+    <div class="frame">
+      <div class="topbar">
+        {#each Array(3)}
+          <div class="fake-button">
+            <svg class="icon" viewBox="0 0 100 100">
+              <circle
+                stroke-width="8"
+                stroke="currentColor"
+                fill="currentColor"
+                cx="50"
+                cy="50"
+                r="45"
+              />
+            </svg>
+          </div>
+        {/each}
       </div>
-    {/each}
-  </div>
 
-  {#if !imageUrl}
-    <div class="content no-image">{altText}</div>
-  {:else}
-    <div class="content">
-      <enhanced:img
-        src={imageModules[`/src/lib/images/${imageUrl}`].default}
-        alt={altText}
-        class="project-image"
-      />
+      {#if !imageUrl}
+        <div class="content no-image">{altText}</div>
+      {:else}
+        <div class="content">
+          <enhanced:img
+            src={imageModules[`/src/lib/images/${imageUrl}`].default}
+            alt={altText}
+            class="project-image"
+          />
+        </div>
+      {/if}
     </div>
-  {/if}
+  </a>
 </div>
 
 <style>
-  .border {
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .frame {
     border: 2px solid var(--color-black);
     border-radius: 3px;
   }
@@ -65,14 +74,16 @@
     height: 0.5em;
   }
   .content {
-    min-height: 10em;
     background: var(--color-gray-translucent);
   }
   .content.no-image {
+    min-width: 16em;
+    min-height: 9em;
     padding: 1em;
   }
   .project-image {
     width: 100%;
+    height: 100%;
     max-height: 20em;
     object-fit: scale-down;
   }
