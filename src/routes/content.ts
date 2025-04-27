@@ -12,7 +12,7 @@ const skills: BubbleList = [
   "React",
   "React Native",
   "Angular",
-  "Vue",
+  "Vue.js",
   "Svelte",
   "HTML",
   "CSS",
