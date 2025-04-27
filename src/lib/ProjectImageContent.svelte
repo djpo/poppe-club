@@ -77,8 +77,7 @@
     align-items: center;
   }
   .empty-label {
-    font-size: 1.5em;
-    margin-top: -0.6em;
+    font-size: 1.2em;
   }
   .project-image {
     /* margin-bottom to correct for mysterious space */

@@ -9,7 +9,7 @@
     <li>
       <p
         class="bubble"
-        style:background-color="var({themes[themeState.themeId].bubbleBg})"
+        style:background="var({themes[themeState.themeId].bubbleBg})"
         style:color="var({themes[themeState.themeId].bubbleText})"
       >
         {text}
@@ -30,6 +30,6 @@
   .bubble {
     border-radius: 1em;
     padding: 0.2em 0.6em;
-    background-color: var(--color-lightgreen-2);
+    background: var(--color-lightgreen-2);
   }
 </style>
