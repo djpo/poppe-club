@@ -33,7 +33,9 @@
   </div>
 
   {#if !imageUrl}
-    <div class="content no-image">{altText}</div>
+    <div class="content no-image">
+      <p class="empty-label">{altText}</p>
+    </div>
   {:else}
     <div class="content">
       <enhanced:img
@@ -68,9 +70,15 @@
     background: var(--color-gray-translucent);
   }
   .content.no-image {
-    min-width: 16em;
+    min-width: 20em;
     min-height: 9em;
-    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .empty-label {
+    font-size: 1.5em;
+    margin-top: -0.6em;
   }
   .project-image {
     /* margin-bottom to correct for mysterious space */

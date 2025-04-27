@@ -33,6 +33,7 @@
         altText={project.name}
         imageUrl={project.images[0]?.url}
         navUrl={`/projects/${project.slug}`}
+        labelOverlay={true}
       />
     {/each}
   </div>
