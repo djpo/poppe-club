@@ -24,9 +24,20 @@ export const projects: Project[] = [
     ],
     contentChunks: [
       {
+        label: "GitHub link",
+        type: "githubLink",
+        content: "https://github.com/djpo/fluesterpost",
+      },
+      {
         label: "Description",
         type: "text",
-        content: `(more description coming soon) got to engage my passion for human languages. look at this design! look at these funny examples!`,
+        content: `
+          (more description coming soon)
+          <br /><br />
+          got to engage my passion for human languages.
+          <br /><br />
+          look at this design! look at these funny examples!
+        `,
       },
       {
         label: "Skills employed",
@@ -57,11 +68,17 @@ export const projects: Project[] = [
       {
         label: "Tasks",
         type: "text",
-        content: `– Create, improve, and bugfix mature consumer apps using React Native and React
-        – Lead rapid implementation of new features and user experiences
-        – Contribute to the growth and stability of core mobile and web apps in multiple markets (first versions in Italy and France)
-        – Collaborate with other internal departments and multiple stakeholders
-        – Take responsibility for maintenance of company-wide technical tools`,
+        content: `
+          – Create, improve, and bugfix mature consumer apps using React Native and React
+          <br />
+          – Lead rapid implementation of new features and user experiences
+          <br />
+          – Contribute to the growth and stability of core mobile and web apps in multiple markets (first versions in Italy and France)
+          <br />
+          – Collaborate with other internal departments and multiple stakeholders
+          <br />
+          – Take responsibility for maintenance of company-wide technical tools
+        `,
       },
       {
         label: "Description",
@@ -101,11 +118,13 @@ export const projects: Project[] = [
       {
         label: "Description",
         type: "text",
-        content: `At Neofonie, I built this frontend app from scratch, to help sell an AI text analysis tool to potential clients. The internal brand Ontolux offers an API that analyzes any length of text (in German or English), with several different functions, including keyword categorization, general postive/negative sentiment, and disambiguation of key terms.
-
-        While building this app, I refreshed my knowledge of modern Angular. I made extensive use of API integration. And I helped to refine conceptual designs into a highly functional demo, that fit into the existing style of other Ontolux experiences.
-
-        Tech used: Angular 16.`,
+        content: `
+          At Neofonie, I built this frontend app from scratch, to help sell an AI text analysis tool to potential clients. The internal brand Ontolux offers an API that analyzes any length of text (in German or English), with several different functions, including keyword categorization, general postive/negative sentiment, and disambiguation of key terms.
+          <br /><br />
+          While building this app, I refreshed my knowledge of modern Angular. I made extensive use of API integration. And I helped to refine conceptual designs into a highly functional demo, that fit into the existing style of other Ontolux experiences.
+          <br /><br />
+          Tech used: Angular 16.
+        `,
       },
       {
         label: "Skills employed",
@@ -131,9 +150,11 @@ export const projects: Project[] = [
       {
         label: "mycare.de",
         type: "text",
-        content: `mycare.de is a long-standing health product marketplace. As one of my main clients at Neofonie, I assisted in many improvements of their full-featured webapp. I fixed bugs, improved loading speed, and helped launch new marketing campaigns. In light of the codebase being somewhat messy and out-of-date, I also helped to refactor and prune the code when possible.
-
-        Tech used: Vue.js`,
+        content: `
+          mycare.de is a long-standing health product marketplace. As one of my main clients at Neofonie, I assisted in many improvements of their full-featured webapp. I fixed bugs, improved loading speed, and helped launch new marketing campaigns. In light of the codebase being somewhat messy and out-of-date, I also helped to refactor and prune the code when possible.
+          <br /><br />
+          Tech used: Vue.js
+        `,
       },
       {
         label: "Skills employed",
@@ -143,11 +164,13 @@ export const projects: Project[] = [
       {
         label: "heyOBI",
         type: "text",
-        content: `Hardware seller OBI was another of my clients while at Neofonie. I helped the OBI developers to migrate to their new CMS leveraging GraphQL. In order to switch to the new CMS provider, my small team adapted their asset converter, so that it could be consumed by their various Backend-for-Frontend applications. Every possible variation of products, articles, suggestions, etc. needed special care.
-
-        This required carefully updating the TypeScript types throughout the conversion service. This very detailed process gave me hands-on experience with a robust and intricate backend application of TypeScript.
-
-        Once all tests showed precisely recreted experiences across all heyOBI user-facing apps, they new CMS service was adopted. Users noticed no difference, but the OBI content creators were able to use a newer system, with many new and improved metadata capabilities unlocked.`,
+        content: `
+          Hardware seller OBI was another of my clients while at Neofonie. I helped the OBI developers to migrate to their new CMS leveraging GraphQL. In order to switch to the new CMS provider, my small team adapted their asset converter, so that it could be consumed by their various Backend-for-Frontend applications. Every possible variation of products, articles, suggestions, etc. needed special care.
+          <br /><br />
+          This required carefully updating the TypeScript types throughout the conversion service. This very detailed process gave me hands-on experience with a robust and intricate backend application of TypeScript.
+          <br /><br />
+          Once all tests showed precisely recreted experiences across all heyOBI user-facing apps, they new CMS service was adopted. Users noticed no difference, but the OBI content creators were able to use a newer system, with many new and improved metadata capabilities unlocked.
+        `,
       },
       {
         label: "Skills employed",
@@ -167,10 +190,18 @@ export const projects: Project[] = [
     ],
     contentChunks: [
       {
+        label: "GitHub link",
+        type: "githubLink",
+        content: "https://github.com/djpo/farklife",
+      },
+      {
         label: "Description",
         type: "text",
-        content:
-          "a simple project to practice my React skills. I like the real-life dice game called Farkle, so it was fun to build it virtually!",
+        content: `
+          This is a small project to practice my React skills.
+          <br /><br />
+          I like the real-life dice game called Farkle, so it was fun to build it virtually!
+        `,
       },
       {
         label: "Skills employed",
@@ -214,27 +245,38 @@ export const projects: Project[] = [
     ],
     contentChunks: [
       {
+        label: "GitHub link",
+        type: "githubLink",
+        content: "https://github.com/djpo/poppe-club",
+      },
+      {
         label: "Description",
         type: "text",
-        content: `This site right here! It's my portfolio site, a place to share my projects and experiences.
-
-        For now it's showcasing only software projects, but in the coming months, I plan to show off other kinds of projects (including original music, dj recordings, film score composition, theatre sound design, and improv comedy).
-
-        If you like what you see, let's talk! I'm looking for work!`,
+        content: `
+          This site right here! It's my portfolio site, a place to share my projects and experiences.
+          <br /><br />
+          For now it's showcasing only software projects, but in the coming months, I plan to show off other kinds of projects (including original music, dj recordings, film score composition, theatre sound design, and improv comedy).
+          <br /><br />
+          If you like what you see, let's talk! I'm looking for work!
+        `,
       },
       {
         label: "Challenges",
         type: "text",
-        content: `One challenge I faced was figuring out how to import images dynamically. I built the copy and image content to be updated in JS objects, rendered conditionally. And that means importing images without static URIs.
-
-        I accomplished this by using the enhanced:img SvelteKit syntax, which in turn leverages Vite's built-in asset handling. Which means that multiple image sizes are created on build, for a quicker, cleaner user experience.`,
+        content: `
+          One challenge I faced was figuring out how to import images dynamically. I built the copy and image content to be updated in JS objects, rendered conditionally. And that means importing images without static URIs.
+          <br /><br />
+          I accomplished this by using the enhanced:img SvelteKit syntax, which in turn leverages Vite's built-in asset handling. Which means that multiple image sizes are created on build, for a quicker, cleaner user experience.
+        `,
       },
       {
         label: "Design",
         type: "text",
-        content: `My friend Jana helped with the design of this site. We discussed my goals (mainly: getting a dev job), collected some inspirations, and looked at the personality of my existing projects.
-
-        Check out Jana's work at janagramlich.com`,
+        content: `
+          My friend Jana helped with the design of this site. We discussed my goals (mainly: getting a dev job), collected some inspirations, and looked at the personality of my existing projects.
+          <br /><br />
+          Check out Jana's work at janagramlich.com
+        `,
       },
       {
         label: "Skills employed",

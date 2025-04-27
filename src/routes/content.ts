@@ -2,7 +2,7 @@ export type BubbleList = string[];
 
 export type ContentChunk = {
   label: string;
-  type: "text" | "bubbleList";
+  type: "text" | "bubbleList" | "githubLink";
   content: string | BubbleList;
 };
 

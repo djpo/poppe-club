@@ -13,11 +13,15 @@
 
   {#each data.project.contentChunks as chunk (chunk)}
     <div class="main-chunk">
-      <h2>{chunk.label}</h2>
-      {#if chunk.type === "bubbleList"}
-        <BubbleList textList={chunk.content} />
+      {#if chunk.type === "githubLink"}
+        <h2><a href={String(chunk.content)} target="_blank">GitHub repo</a></h2>
       {:else}
-        <p>{chunk.content}</p>
+        <h2>{chunk.label}</h2>
+        {#if chunk.type === "bubbleList"}
+          <BubbleList textList={chunk.content} />
+        {:else}
+          <p>{@html chunk.content}</p>
+        {/if}
       {/if}
     </div>
   {/each}
