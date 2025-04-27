@@ -42,12 +42,12 @@
     <div class="footer-chunk-wider">
       <h2>Poppe</h2>
       <p>
-        Frontend developer
+        Software developer
         <br />
         Visit me on
-        <a href="https://www.linkedin.com/in/poppepoppe" target="_blank"
-          >LinkedIn</a
+        <a href="https://linkedin.com/in/poppepoppe" target="_blank">LinkedIn</a
         >
+        & <a href="https://github.com/djpo" target="_blank">GitHub</a>
         <br />
         Download my
         <a
@@ -67,7 +67,7 @@
       <p>
         poppeisadancer@gmail.com
         <br />
-        0176 7126346
+        +49 176 7126346
       </p>
     </div>
 
@@ -77,6 +77,9 @@
         <a href="/about">About me</a>
         <br />
         <a href="/privacy">Privacy policy</a>
+        <br />
+        Design by
+        <a href="https://janagramlich.com/" target="_blank">Jana Gramlich</a>
       </p>
     </div>
   </div>
