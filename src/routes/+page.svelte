@@ -72,9 +72,9 @@
     </div>
 
     <div>
-      <h2>Legal</h2>
+      <h2>More</h2>
       <p>
-        <a href="/imprint">Imprint</a>
+        <a href="/about">About me</a>
         <br />
         <a href="/privacy">Privacy policy</a>
       </p>
