@@ -135,6 +135,9 @@ button:focus:not(:focus-visible) {
   user-select: none; /* Standard syntax */
 }
 
+.main-chunk {
+  margin-top: 2em;
+}
 @media (max-width: 479px) {
   .main-chunk {
     padding: 0;
@@ -142,7 +145,7 @@ button:focus:not(:focus-visible) {
 }
 @media (max-width: 719px) {
   .main-chunk {
-    margin-top: 1em;
+    margin-top: 1.5em;
   }
 }
 @media (min-width: 1080px) {
