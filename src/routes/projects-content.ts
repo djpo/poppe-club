@@ -17,7 +17,11 @@ export const projects: Project[] = [
     slug: "fluesterpost",
     name: "Flüsterpost",
     images: [
-      { url: "fluesterpost_1_full.png", label: "full translation cycle" },
+      // {
+      //   url: "fluesterpost_0_video.mp4",
+      //   label: "select language cycle & translate",
+      // },
+      { url: "fluesterpost_1_full.png", label: "finished cycle" },
       { url: "fluesterpost_2_empty_mobile.png", label: "empty (mobile)" },
       { url: "fluesterpost_3_full_mobile.png", label: "full (mobile)" },
       { url: "fluesterpost_4_wireframe.png", label: "wireframe" },
