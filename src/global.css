@@ -23,6 +23,8 @@
   --color-sherbert-orange: rgb(255, 153, 153);
   --color-sherbert-blue: rgb(100, 216, 228);
 
+  --color-link-underline: blue;
+
   --column-width: 42em;
   --column-margin-top: 4em;
   --breakpoint-s: 360px;
@@ -54,10 +56,23 @@ p {
   line-height: 1.3;
 }
 a {
+  background: linear-gradient(
+    to bottom,
+    var(--color-link-underline) 0%,
+    var(--color-link-underline) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 3px;
+  color: #000;
   text-decoration: none;
 }
 a:hover {
-  text-decoration: underline;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
 }
 @media (min-width: 380px) {
   p {
