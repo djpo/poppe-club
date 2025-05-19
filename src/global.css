@@ -1,8 +1,9 @@
 @import "@fontsource-variable/dm-sans";
 
 :root {
-  --font-body-default: Arial, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --font-body-default:
+    Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-body-1: "DM Sans Variable";
   --font-mono: monospace;
 
@@ -14,6 +15,7 @@
   --color-teal: rgb(52, 204, 205);
   --color-lightgreen-1: rgb(182, 239, 221);
   --color-orange: rgb(255, 110, 19);
+  --color-lightorange: rgb(255, 152, 0);
   --color-fuchsia: rgb(255, 39, 197);
   --color-lightgreen-2: rgb(150, 222, 207);
   --color-lightblue: rgb(103, 169, 217);
@@ -25,6 +27,8 @@
   --color-link-gradient-1: rgb(225, 245, 73);
   --color-link-gradient-2: rgb(41, 209, 192);
   --color-link-gradient-3: rgb(156, 108, 234);
+
+  --color-link-underline: var(--color-lightorange);
 
   --column-width: 42em;
   --column-margin-top: 4em;
@@ -57,30 +61,24 @@ p {
   line-height: 1.3;
 }
 a {
-  display: inline-block;
-  position: relative;
+  background: linear-gradient(
+    to bottom,
+    var(--color-link-underline) 0%,
+    var(--color-link-underline) 100%
+  );
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 3px 2.5px;
   text-decoration: none;
   color: inherit;
   z-index: 1;
 }
-a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0.07em;
-  height: 0.1em;
-  width: 100%;
-  background: linear-gradient(
-    110deg,
-    var(--color-link-gradient-1),
-    var(--color-link-gradient-2),
-    var(--color-link-gradient-3)
-  );
-  z-index: -1;
-  transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
-}
-a:hover::after {
-  height: 0.2em;
+a:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23ff9800' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
 }
 @media (min-width: 380px) {
   p {
