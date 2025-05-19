@@ -25,7 +25,7 @@ export const homeContent: ContentChunk[] = [
     label: "Experience",
     type: "text",
     content:
-      "6 years of experience in frontend development. Diverse environments including agencies, startups, and mid-size businesses.",
+      "6 years of experience building web and mobile apps, at agencies, startups, and mid-size businesses. Specializing in JavaScript and frontend frameworks including React, Angular, Vue, and Svelte.",
   },
   {
     label: "Skills",

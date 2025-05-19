@@ -11,8 +11,8 @@
   <Nav />
 
   <h1>
-    Hi! I'm Poppe, a frontend developer. I'm good with people, and I love to
-    create with the audience in mind.
+    Hi! I'm Poppe, a web developer. I'm good with people, and I love to create
+    with the audience in mind.
   </h1>
 
   <div class="main-chunks-container">
