@@ -24,12 +24,12 @@ export const projects: Project[] = [
     ],
     contentChunks: [
       {
-        label: "Live link",
+        label: "Try it out!",
         type: "liveLink",
         content: "https://fluesterpost.poppe.club",
       },
       {
-        label: "GitHub link",
+        label: "On GitHub",
         type: "githubLink",
         content: "https://github.com/djpo/fluesterpost",
       },
@@ -198,7 +198,7 @@ export const projects: Project[] = [
     ],
     contentChunks: [
       {
-        label: "GitHub link",
+        label: "GitHub repo",
         type: "githubLink",
         content: "https://github.com/djpo/farklife",
       },
@@ -253,7 +253,7 @@ export const projects: Project[] = [
     ],
     contentChunks: [
       {
-        label: "GitHub link",
+        label: "GitHub repo",
         type: "githubLink",
         content: "https://github.com/djpo/poppe-club",
       },
