@@ -15,6 +15,8 @@
     <div class="main-chunk">
       {#if chunk.type === "githubLink"}
         <h2><a href={String(chunk.content)} target="_blank">GitHub repo</a></h2>
+      {:else if chunk.type === "liveLink"}
+        <h2><a href={String(chunk.content)} target="_blank">Live link</a></h2>
       {:else}
         <h2>{chunk.label}</h2>
         {#if chunk.type === "bubbleList"}

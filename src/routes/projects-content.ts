@@ -24,6 +24,11 @@ export const projects: Project[] = [
     ],
     contentChunks: [
       {
+        label: "Live link",
+        type: "liveLink",
+        content: "https://fluesterpost.poppe.club",
+      },
+      {
         label: "GitHub link",
         type: "githubLink",
         content: "https://github.com/djpo/fluesterpost",
@@ -32,23 +37,26 @@ export const projects: Project[] = [
         label: "Description",
         type: "text",
         content: `
-          (more description coming soon)
+          I built this app inspired by the game 'telephone' (or "Flüsterpost" in German). Send text through a cycle of translations through multiple languages. See how it's changed when it returns to the origin language! Try it out at the link above!
           <br /><br />
-          got to engage my passion for human languages.
+          I started this project in 2022 to practice my React skills, and to build an app around a topic I enjoy: human languages. It started as a React app with Redux and Sagas, and I recently (2025) have migrated it to Next.js (and eschewed Redux and Sagas).
           <br /><br />
-          look at this design! look at these funny examples!
+          The user first enters text to translate, then determines a customizable cycle (of any length) of languages. Then the app will automatically translates the text through each step of the cycle using Google Translate API. The user watches this process unfold until it ends with a final translation back into the original language, providing an often different and fun result.
+          <br /><br />
+          I'm working on this app presently (May 2025). Next steps include: restyling (especially for mobile); allowing the user to save their translatio cycles; displaying a page of others' saved cycles.
+          <br /><br />
+          The below images capture highlight some fun examples of translation cycles.
         `,
       },
       {
         label: "Skills employed",
         type: "bubbleList",
         content: [
-          "Angular",
+          "Next.js",
           "React",
-          "Sagas",
           "Google Translate API",
-          "Express.js",
-          "node.js",
+          "Redux",
+          "Sagas",
           "CSS",
         ],
       },
