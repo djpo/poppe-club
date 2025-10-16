@@ -10,7 +10,7 @@
       <br />
       Download my
       <a
-        href="https://drive.google.com/file/d/1mMWnNBjFATlkT7hIZ_SBLYa0elyXJHv_/view"
+        href="https://drive.google.com/file/d/1NxVWTSSeazO2B9BF2FCE0467ZCqKoq6q/view"
         target="_blank">CV</a
       >
       <br />
