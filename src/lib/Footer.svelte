@@ -1,6 +1,6 @@
 <div class="footer-chunks-container">
   <div>
-    <h2>Contact</h2>
+    <h2>contact</h2>
     <p>
       poppe@poppe.club
       <br />
@@ -9,11 +9,11 @@
   </div>
 
   <div>
-    <h2>More</h2>
+    <h2>more</h2>
     <p>
-      <a href="/about">About me</a>
+      <a href="/about">about me</a>
       <br />
-      <a href="/privacy">Privacy policy</a>
+      <a href="/privacy">privacy policy</a>
     </p>
   </div>
 </div>

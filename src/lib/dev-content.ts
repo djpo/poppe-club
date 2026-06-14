@@ -22,13 +22,13 @@ const skills: BubbleList = [
 
 export const devContent: ContentChunk[] = [
   {
-    label: "Experience",
+    label: "experience",
     type: "text",
     content:
-      "6 years of experience building web and mobile apps, at agencies, startups, and mid-size businesses. Specializing in JavaScript and frontend frameworks including React, Angular, Vue, and Svelte.",
+      "6 years of experience building web and mobile apps, at agencies, startups, and mid-size businesses. specializing in JavaScript and frontend frameworks including React, Angular, Vue, and Svelte.",
   },
   {
-    label: "Skills",
+    label: "skills",
     type: "bubbleList",
     content: skills,
   },

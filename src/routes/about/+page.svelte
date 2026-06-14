@@ -5,7 +5,7 @@
 <section>
   <Nav />
 
-  <h1>About me</h1>
+  <h1>about me</h1>
 
   <p>
     hi!

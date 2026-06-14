@@ -18,11 +18,11 @@
   </h2>
 
   <p>
-    Visit me on
+    visit me on
     <a href="https://linkedin.com/in/poppepoppe" target="_blank">LinkedIn</a>
     & <a href="https://github.com/djpo" target="_blank">GitHub</a>
     <br />
-    Download my
+    download my
     <a
       href="https://drive.google.com/file/d/11lJPkcGhqxN8v-R7AU6YNhHTSjpW73I6/view"
       target="_blank">software CV</a
