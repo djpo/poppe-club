@@ -1,6 +1,6 @@
 import type { ContentChunk } from "$lib/dev-content.ts";
 
-type ProjectImage = {
+export type Image = {
   url: string;
   label: string;
 };
@@ -8,7 +8,7 @@ type ProjectImage = {
 export type Project = {
   slug: string;
   name: string;
-  images: ProjectImage[];
+  images: Image[];
   contentChunks: ContentChunk[];
 };
 
