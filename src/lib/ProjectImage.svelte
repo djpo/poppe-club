@@ -1,27 +1,33 @@
 <script lang="ts">
   import ProjectImageContent from "$lib/ProjectImageContent.svelte";
 
-  let { altText, imageUrl = "", navUrl = "", labelOverlay = false } = $props();
+  let {
+    altText,
+    imageUrl = "",
+    navUrl = "",
+    hasLabelOverlay = false,
+    hasBrowserFrame = false,
+  } = $props();
 </script>
 
 <div class="wrapper">
   {#if navUrl}
     <a class="btn" href={navUrl}>
-      {#if labelOverlay}
+      {#if hasLabelOverlay}
         <div class="overlay-wrapper">
           <div class="overlay">
             <div class="overlay-label-bubble">
               <p class="overlay-label">{altText}</p>
             </div>
           </div>
-          <ProjectImageContent {altText} {imageUrl} />
+          <ProjectImageContent {altText} {imageUrl} {hasBrowserFrame} />
         </div>
       {:else}
-        <ProjectImageContent {altText} {imageUrl} />
+        <ProjectImageContent {altText} {imageUrl} {hasBrowserFrame} />
       {/if}
     </a>
   {:else}
-    <ProjectImageContent {altText} {imageUrl} />
+    <ProjectImageContent {altText} {imageUrl} {hasBrowserFrame} />
   {/if}
 </div>
 

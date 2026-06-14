@@ -1,5 +1,5 @@
 <script lang="ts">
-  let { altText, imageUrl = "" } = $props();
+  let { altText, imageUrl = "", hasBrowserFrame = false } = $props();
 
   // type for import.meta.glob
   // https://github.com/vitejs/vite/issues/9599#issuecomment-1209333753
@@ -15,22 +15,24 @@
 </script>
 
 <div class="frame">
-  <div class="topbar">
-    {#each Array(3)}
-      <div class="fake-button">
-        <svg class="icon" viewBox="0 0 100 100">
-          <circle
-            stroke-width="8"
-            stroke="currentColor"
-            fill="currentColor"
-            cx="50"
-            cy="50"
-            r="45"
-          />
-        </svg>
-      </div>
-    {/each}
-  </div>
+  {#if hasBrowserFrame}
+    <div class="topbar">
+      {#each Array(3)}
+        <div class="fake-button">
+          <svg class="icon" viewBox="0 0 100 100">
+            <circle
+              stroke-width="8"
+              stroke="currentColor"
+              fill="currentColor"
+              cx="50"
+              cy="50"
+              r="45"
+            />
+          </svg>
+        </div>
+      {/each}
+    </div>
+  {/if}
 
   {#if !imageUrl}
     <div class="content no-image">

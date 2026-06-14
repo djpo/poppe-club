@@ -19,11 +19,7 @@
 
   <div class="projects">
     {#each photos as photo}
-      <ProjectImage
-        altText={photo.label}
-        imageUrl={photo.url}
-        labelOverlay={true}
-      />
+      <ProjectImage altText={photo.label} imageUrl={photo.url} />
     {/each}
   </div>
 

@@ -48,7 +48,8 @@
         altText={project.name}
         imageUrl={project.images[0]?.url}
         navUrl={`/dev/projects/${project.slug}`}
-        labelOverlay={true}
+        hasLabelOverlay={true}
+        hasBrowserFrame={true}
       />
     {/each}
   </div>

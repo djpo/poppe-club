@@ -63,7 +63,11 @@
     {#each data.project.images as image (image)}
       <div class="image-wrapper">
         <h2 class="image-label">{image.label}</h2>
-        <ProjectImage altText={image.label} imageUrl={image.url} />
+        <ProjectImage
+          altText={image.label}
+          imageUrl={image.url}
+          hasBrowserFrame={true}
+        />
       </div>
     {/each}
   </div>
