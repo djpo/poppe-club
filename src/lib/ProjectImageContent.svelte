@@ -4,13 +4,13 @@
   // type for import.meta.glob
   // https://github.com/vitejs/vite/issues/9599#issuecomment-1209333753
   const imageModules = import.meta.glob<Record<string, string>>(
-    "$lib/images/*.png",
+    "$lib/images/*.{png,jpg}",
     {
       eager: true,
       query: {
         enhanced: true,
       },
-    }
+    },
   );
 </script>
 
