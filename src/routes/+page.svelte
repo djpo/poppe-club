@@ -13,10 +13,7 @@
     <a href="https://soundcloud.com/poppe-poppe" target="_blank"> music </a>
   </h2>
   <h2>
-    <a
-      href="https://vimeo.com/1196201837?share=copy&fl=sv&fe=ci"
-      target="_blank"
-    >
+    <a href="https://vimeo.com/1196201837" target="_blank">
       film score and sound design
     </a>
   </h2>
