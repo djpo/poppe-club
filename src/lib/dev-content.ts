@@ -20,7 +20,7 @@ const skills: BubbleList = [
   "German",
 ];
 
-export const homeContent: ContentChunk[] = [
+export const devContent: ContentChunk[] = [
   {
     label: "Experience",
     type: "text",

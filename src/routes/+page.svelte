@@ -1,60 +1,31 @@
 <script>
   import Nav from "$lib/Nav.svelte";
   import Footer from "$lib/Footer.svelte";
-  import BubbleList from "$lib/BubbleList.svelte";
-  import ProjectImage from "$lib/ProjectImage.svelte";
-  import { homeContent } from "./content.ts";
-  import { projects } from "./projects-content.ts";
 </script>
 
 <section>
   <Nav />
 
-  <h1>
-    Hi! I'm Poppe, a web developer. I'm good with people, and I love to create
-    with the audience in mind.
-  </h1>
+  <h1>hi! I'm Poppe.</h1>
+  <h1>welcome to my website!</h1>
+  <h1>check out the things I do:</h1>
 
-  <div class="main-chunks-container">
-    {#each homeContent as chunk (chunk)}
-      <div class="main-chunk">
-        <h2>{chunk.label}</h2>
-        {#if chunk.type === "bubbleList"}
-          <BubbleList textList={chunk.content} />
-        {:else}
-          <p>{chunk.content}</p>
-        {/if}
-      </div>
-    {/each}
-  </div>
+  <h2>
+    <a href="https://soundcloud.com/poppe-poppe" target="_blank"> music </a>
+  </h2>
+  <h2>
+    <a
+      href="https://vimeo.com/1196201837?share=copy&fl=sv&fe=ci"
+      target="_blank"
+    >
+      film score and sound design
+    </a>
+  </h2>
+  <h2><a href="/dev">software development</a></h2>
 
-  <div class="projects">
-    {#each projects as project (project)}
-      <ProjectImage
-        altText={project.name}
-        imageUrl={project.images[0]?.url}
-        navUrl={`/projects/${project.slug}`}
-        labelOverlay={true}
-      />
-    {/each}
-  </div>
+  <h2>improv comedy</h2>
+  <h2>photography</h2>
+  <h2>fuseletter (my nifty newsletter)</h2>
 
   <Footer />
 </section>
-
-<style>
-  @media (min-width: 720px) {
-    .main-chunks-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
-      gap: 1em;
-    }
-  }
-  .projects {
-    margin-top: 2em;
-    margin-bottom: 1em;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
-    gap: 1em;
-  }
-</style>

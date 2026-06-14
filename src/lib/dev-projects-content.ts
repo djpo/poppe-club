@@ -1,4 +1,4 @@
-import type { ContentChunk } from "./content.ts";
+import type { ContentChunk } from "$lib/dev-content.ts";
 
 type ProjectImage = {
   url: string;
@@ -12,7 +12,7 @@ export type Project = {
   contentChunks: ContentChunk[];
 };
 
-export const projects: Project[] = [
+export const devProjects: Project[] = [
   {
     slug: "fluesterpost",
     name: "Flüsterpost",

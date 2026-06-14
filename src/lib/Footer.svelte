@@ -1,25 +1,4 @@
 <div class="footer-chunks-container">
-  <div class="footer-chunk-wider">
-    <h2>Poppe</h2>
-    <p>
-      Software developer
-      <br />
-      Visit me on
-      <a href="https://linkedin.com/in/poppepoppe" target="_blank">LinkedIn</a>
-      & <a href="https://github.com/djpo" target="_blank">GitHub</a>
-      <br />
-      Download my
-      <a
-        href="https://drive.google.com/file/d/11lJPkcGhqxN8v-R7AU6YNhHTSjpW73I6/view"
-        target="_blank">CV</a
-      >
-      <br />
-      Check out my music on
-      <a href="https://soundcloud.com/poppe-poppe" target="_blank">Soundcloud</a
-      >
-    </p>
-  </div>
-
   <div>
     <h2>Contact</h2>
     <p>
@@ -36,7 +15,7 @@
       <br />
       <a href="/privacy">Privacy policy</a>
       <br />
-      Design by
+      Design assistance by
       <a href="https://janagramlich.com/" target="_blank">Jana Gramlich</a>
     </p>
   </div>
@@ -53,14 +32,6 @@
     .footer-chunks-container {
       margin-top: 1em;
       grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  .footer-chunk-wider {
-    min-width: 280px;
-  }
-  @media (max-width: 719px) {
-    .footer-chunk-wider {
-      grid-column: 1 / span 2;
     }
   }
 </style>
