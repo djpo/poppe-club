@@ -21,8 +21,7 @@
     </a>
   </h2>
   <h2><a href="/dev">software development</a></h2>
-
-  <h2>improv comedy</h2>
-  <h2>photography</h2>
-  <h2>fuseletter (my nifty newsletter)</h2>
+  <h2><a href="/acting">acting and improv comedy</a></h2>
+  <h2><a href="/photography">photography</a></h2>
+  <h2><a href="/fuseletter">fuseletter (my nifty newsletter)</a></h2>
 </section>
