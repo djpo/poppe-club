@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Footer from "$lib/Footer.svelte";
   import "../global.css";
   import { themes, themeState } from "$lib/theme.svelte.ts";
 
@@ -12,6 +13,7 @@
 >
   <main>
     {@render children()}
+    <Footer />
   </main>
 </div>
 

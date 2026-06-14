@@ -1,6 +1,5 @@
 <script>
   import Nav from "$lib/Nav.svelte";
-  import Footer from "$lib/Footer.svelte";
   import BubbleList from "$lib/BubbleList.svelte";
   import ProjectImage from "$lib/ProjectImage.svelte";
   import { devContent } from "$lib/dev-content.ts";
@@ -52,8 +51,6 @@
       />
     {/each}
   </div>
-
-  <Footer />
 </section>
 
 <style>

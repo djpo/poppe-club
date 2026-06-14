@@ -1,6 +1,5 @@
 <script>
   import Nav from "$lib/Nav.svelte";
-  import Footer from "$lib/Footer.svelte";
 </script>
 
 <section>
@@ -26,6 +25,4 @@
   <h2>improv comedy</h2>
   <h2>photography</h2>
   <h2>fuseletter (my nifty newsletter)</h2>
-
-  <Footer />
 </section>
