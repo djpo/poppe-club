@@ -12,8 +12,9 @@
   <h1>software development</h1>
 
   <h2>
-    as a developer, I'm good with people, and I love to create with the audience
-    in mind.
+    as a developer, I'm good with people, and I love creating little moments of
+    delight for users. I enjoy solving all the little puzzles involved in
+    programming.
   </h2>
 
   <p>
@@ -24,7 +25,7 @@
     Download my
     <a
       href="https://drive.google.com/file/d/11lJPkcGhqxN8v-R7AU6YNhHTSjpW73I6/view"
-      target="_blank">CV</a
+      target="_blank">software CV</a
     >
   </p>
 

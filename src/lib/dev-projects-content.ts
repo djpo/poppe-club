@@ -283,7 +283,7 @@ export const devProjects: Project[] = [
         content: `
           My friend Jana helped with the design of this site. We discussed my goals (mainly: getting a dev job), collected some inspirations, and looked at the personality of my existing projects.
           <br /><br />
-          Check out Jana's work at janagramlich.com
+          Check out Jana's work at <a href="https://janagramlich.com/" target="_blank">janagramlich.com</a>
         `,
       },
       {

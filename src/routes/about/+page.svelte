@@ -8,17 +8,12 @@
   <h1>About me</h1>
 
   <p>
-    Hi!
+    hi!
     <br />
     <br />
-    I'm a multi-faceted human, with diverse interests and passions. I
-    <a href="https://soundcloud.com/poppe-poppe" target="_blank">make music</a>,
-    I perform improv comedy, I learn every day, and I push for economic and
-    housing reform.
-    <br />
-    <br />
-    When it comes to software development, I love creating little moments of delight
-    for users. And I enjoy solving all the little puzzles involved in programming.
+    I'm a multi-faceted human, with diverse interests and passions. beyond the professional
+    and creative offerings displayed across this site, I like to learn every day,
+    push for economic and housing reform, and promote humanizing communication.
     <br />
     <br />
     I'm from Seattle, and I currently live in Berlin.

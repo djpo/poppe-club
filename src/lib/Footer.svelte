@@ -14,9 +14,6 @@
       <a href="/about">About me</a>
       <br />
       <a href="/privacy">Privacy policy</a>
-      <br />
-      Design assistance by
-      <a href="https://janagramlich.com/" target="_blank">Jana Gramlich</a>
     </p>
   </div>
 </div>
