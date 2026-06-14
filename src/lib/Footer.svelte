@@ -10,7 +10,7 @@
       <br />
       Download my
       <a
-        href="https://drive.google.com/file/d/1NxVWTSSeazO2B9BF2FCE0467ZCqKoq6q/view"
+        href="https://drive.google.com/file/d/11lJPkcGhqxN8v-R7AU6YNhHTSjpW73I6/view"
         target="_blank">CV</a
       >
       <br />
@@ -23,9 +23,9 @@
   <div>
     <h2>Contact</h2>
     <p>
-      poppeisadancer@gmail.com
+      poppe@poppe.club
       <br />
-      +49 176 7126346
+      +49 176 73126346
     </p>
   </div>
 
