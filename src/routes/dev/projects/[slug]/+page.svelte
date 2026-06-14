@@ -7,7 +7,7 @@
 </script>
 
 <section>
-  <Nav />
+  <Nav customXUrl="/dev" />
 
   <h1>{data.project.name}</h1>
 

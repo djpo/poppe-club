@@ -3,11 +3,17 @@
   import { themes, themeState, cycleTheme } from "$lib/theme.svelte.ts";
   import { page } from "$app/state";
 
+  let { customXUrl = "" } = $props();
+
   function handleClickDot() {
     cycleTheme();
   }
   function handleClickX() {
-    goto("/");
+    if (customXUrl) {
+      goto(customXUrl);
+    } else {
+      goto("/");
+    }
   }
 </script>
 
