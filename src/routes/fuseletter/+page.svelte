@@ -8,7 +8,7 @@
   <h1>fuseletter</h1>
 
   <h2>I write an email newsletter called *fuseletter*</h2>
-  <p>(as in, the wick for an explosive, and also to bind together). 💣🤗⚡️</p>
+  <p>(as in, the wick for an explosive, and also to bind together) 💣🤗⚡️</p>
 
   <br />
   <p>my intention is to send 1-3 emails per month, which will include:</p>

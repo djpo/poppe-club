@@ -9,10 +9,9 @@
 
   <h1>photography</h1>
 
-  <p>
-    while studying film production, I developed a love for photography. I take
-    portraits, landscapes, random views from my life, mostly on 35mm.
-  </p>
+  <h2>
+    I take portraits, landscapes, random views from my life, mostly on 35mm.
+  </h2>
 
   <br />
   <p>here's a sample!</p>
