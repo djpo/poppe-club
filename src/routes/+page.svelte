@@ -9,14 +9,8 @@
   <h1>welcome to my website!</h1>
   <h1>check out the things I do:</h1>
 
-  <h2>
-    <a href="https://soundcloud.com/poppe-poppe" target="_blank"> music </a>
-  </h2>
-  <h2>
-    <a href="https://vimeo.com/1196201837" target="_blank">
-      film score and sound design
-    </a>
-  </h2>
+  <h2><a href="/music">music</a></h2>
+  <h2><a href="/film">film score & sound design</a></h2>
   <h2><a href="/dev">software development</a></h2>
   <h2><a href="/acting">acting and improv comedy</a></h2>
   <h2><a href="/photography">photography</a></h2>
