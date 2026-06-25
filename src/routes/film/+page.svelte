@@ -25,7 +25,7 @@
   <h2>projects I've worked on:</h2>
   <br />
   <p>
-    <a href="https://vimeo.com/1196201837" target="_blank"> my reel (2026) </a>
+    <a href="https://vimeo.com/1204496621" target="_blank"> my reel (2026) </a>
   </p>
   <br />
   <p>
